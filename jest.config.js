@@ -1,5 +1,11 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
+  globals: {
+    'ts-jest': {
+      tsconfig: 'tsconfig.test.json',
+      isolatedModules: true,
+    },
+  },
   preset: 'ts-jest',
   testEnvironment: 'node',
   coverageDirectory: 'coverage',
@@ -12,9 +18,8 @@ module.exports = {
       statements: 0,
     },
   },
+  moduleDirectories: ['node_modules', 'src', 'test'],
   moduleNameMapper: {
-    'src/(.*)': '<rootDir>/src/$1',
-    '^@/(.*)$': '<rootDir>/src/$1',
+    '@math/(.*)': '<rootDir>src/math/$1',
   },
-  moduleDirectories: ['node_modules', 'src'],
 };

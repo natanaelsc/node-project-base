@@ -1,4 +1,4 @@
-import { add } from './math/add';
+import { add } from '@math/add';
 import 'dotenv/config';
 
 console.log('Hello World!');

@@ -10,8 +10,13 @@
     ],
     "allowJs": true, // allow javascript files to be compiled
     "outDir": "./dist", // where to put the compiled files
-    "rootDir": ".", // where to start looking for files
     "removeComments": true, // remove comments from the output
+    "sourceMap": true, // generate a source map
+    "typeRoots": [ // where to find type definitions
+      "./node_modules/@types",
+      "./src/@types",
+      "./src/types"
+    ],
 
     /* Strict Type Checking Options */
     "strict": true,
@@ -21,7 +26,7 @@
     "moduleResolution": "node", // Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6).
     "baseUrl": ".", // where to start looking for modules
     "paths": { // custom module resolution paths
-      "@src/*": ["src/*"] // "src/*" is a glob pattern for all files in the "src" directory
+      "@math/*": ["src/math/*"] // "src/math/*" is a glob pattern for all files in the "src/math" directory
     },
     "esModuleInterop": true,
 
@@ -32,7 +37,8 @@
     /* Advanced Options */
     "skipLibCheck": true, // skip type checking of declaration files
     "forceConsistentCasingInFileNames": true, // force consistent casing for identifiers in the output
+    "resolveJsonModule": true, // allow json modules to be resolved
   },
   "exclude": ["node_modules", "dist", "covarage"],
-  "include": ["src"],
+  "include": ["src", "test"],
 }

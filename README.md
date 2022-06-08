@@ -70,7 +70,7 @@ import 'dotenv/config'
 ```
 ***[File Exemple](https://github.com/natanaelsc96/node-project-base/blob/main/.env.exemple)***
 
-## Jest
+## [Jest (TS Jest)](https://github.com/kulshekhar/ts-jest)
 ```sh
 yarn add -D jest ts-jest @types/jest
 ```

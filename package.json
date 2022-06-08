@@ -7,7 +7,7 @@
   "scripts": {
     "start:nodemon": "nodemon",
     "start:dev": "tsnd --respawn --cls -r tsconfig-paths/register ./src/index.ts",
-    "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/index.js",
     "build": "tsc -p tsconfig.prod.json",
     "test": "jest",
     "test:watch": "jest --watch",

@@ -1,4 +1,4 @@
-import { add } from '../src/math/add';
+import { add } from '@math/add';
 
 describe('This is a test', () => {
   it('should pass', () => {

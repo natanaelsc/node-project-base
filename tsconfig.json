@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+
+    /* Basic Options */
+    "target": "es2016", // Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'.
+    "module": "commonjs",
+    "lib": [
+      "esnext", // for async/await
+      "dom" // "dom" is needed for the "dom" module
+    ],
+    "allowJs": true, // allow javascript files to be compiled
+    "outDir": "./dist", // where to put the compiled files
+    "rootDir": ".", // where to start looking for files
+    "removeComments": true, // remove comments from the output
+
+    /* Strict Type Checking Options */
+    "strict": true,
+    "noImplicitAny": true, // error if not all parameters have a type annotation
+
+    /* Module Resolution Options */
+    "moduleResolution": "node", // Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6).
+    "baseUrl": ".", // where to start looking for modules
+    "paths": { // custom module resolution paths
+      "@src/*": ["src/*"] // "src/*" is a glob pattern for all files in the "src" directory
+    },
+    "esModuleInterop": true,
+
+    /* Experimental Options */
+    "experimentalDecorators": true, // enable experimental support for ES7 decorators
+    "emitDecoratorMetadata": true, // emit metadata for class decorators
+
+    /* Advanced Options */
+    "skipLibCheck": true, // skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // force consistent casing for identifiers in the output
+  },
+  "exclude": ["node_modules", "dist", "covarage"],
+  "include": ["src"],
+}

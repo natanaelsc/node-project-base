@@ -1,0 +1,6 @@
+**/.git
+**/.svn
+**/.hg
+**/node_module
+**/src/database
+**/dist/

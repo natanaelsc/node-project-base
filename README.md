@@ -61,13 +61,14 @@ echo {}> nodemon.json
 ```
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/nodemon.json)***
 
-## Dotenv
+## [Dotenv](https://github.com/motdotla/dotenv)
 ```sh
 yarn add dotenv
 ```
 ```sh
 import 'dotenv/config'
 ```
+***[File Exemple](https://github.com/natanaelsc96/node-project-base/blob/main/.env.exemple)***
 
 ## Jest
 ```sh

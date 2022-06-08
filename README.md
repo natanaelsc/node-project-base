@@ -22,5 +22,5 @@
 -> yarn add -D nodemon <br>
 -> echo {}> nodemon.json <br>
 # DotEnv
-yarn add dotenv
-import 'dotenv/config'
+-> yarn add dotenv <br>
+-> import 'dotenv/config' <br>

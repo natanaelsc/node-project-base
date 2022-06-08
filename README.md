@@ -27,3 +27,10 @@
 # Jest
 -> yarn add -D jest ts-jest @types/jest <br>
 -> npx ts-jest config:init <br>
+# Commit Msg Linter
+```sh
+yarn add -D git-commit-msg-linter
+```
+```sh
+npx husky add .husky/commit-msg ".git/hooks/commit-msg \$1"
+```

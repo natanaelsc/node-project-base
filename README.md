@@ -18,3 +18,6 @@
 -> yarn add -D eslint-import-resolver-typescript tsconfig-paths <br>
 -> echo {}> .prettierrc.json <br>
 -> touch .prettierignore <br>
+# Nodemon
+-> yarn add -D nodemon <br>
+-> echo {}> nodemon.json <br>

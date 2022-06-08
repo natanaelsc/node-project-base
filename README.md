@@ -24,3 +24,6 @@
 # DotEnv
 -> yarn add dotenv <br>
 -> import 'dotenv/config' <br>
+# Jest
+-> yarn add -D jest ts-jest @types/jest <br>
+-> npx ts-jest config:init <br>

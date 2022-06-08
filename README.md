@@ -78,6 +78,7 @@ yarn add -D jest ts-jest @types/jest
 npx ts-jest config:init
 ```
 > Rename jest.config.js to .ts
+
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/jest.config.ts)***
 
 ## [Commit Msg Linter](https://github.com/legend80s/commit-msg-linter)

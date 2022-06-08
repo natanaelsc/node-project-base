@@ -37,3 +37,12 @@ echo {}> commitlinterrc.json
 npx husky add .husky/commit-msg ".git/hooks/commit-msg \$1"
 ```
 > [File](https://github.com/natanaelsc96/node-project-base/blob/main/commitlinterrc.json)
+
+## [Lint Stage](https://github.com/okonet/lint-staged)
+```sh
+npx mrm@2 lint-staged
+```
+```sh
+echo {}> .lintstagedrc.json
+```
+***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/commitlinterrc.json)***

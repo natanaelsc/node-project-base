@@ -1,0 +1,30 @@
+{
+  "configurations": [
+
+      {
+          "name": "Debug TypeScript",
+          "type": "node",
+          "request": "launch",
+          "remoteRoot": "/home/node/app",
+          "localRoot": "${workspaceFolder}",
+          "program": "${workspaceFolder}/src/index.ts",
+          "runtimeArgs": [
+              "-r",
+              "ts-node/register",
+              "-r",
+              "tsconfig-paths/register"
+          ],
+          "skipFiles": [
+              "<node_internals>/**"
+          ],
+          "outFiles": [
+              "${workspaceFolder}/dist/**/*.js"
+          ],
+          "envFile": "${workspaceFolder}/.env",
+          "console": "integratedTerminal",
+          "internalConsoleOptions": "neverOpen",
+          "restart": true,
+      }
+
+  ]
+}

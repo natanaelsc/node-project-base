@@ -9,10 +9,10 @@
     "start:dev": "tsnd --respawn --cls -r tsconfig-paths/register ./src/index.ts",
     "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/index.js",
     "build": "tsc -p tsconfig.prod.json",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint src/**/*.ts", 
+    "test": "jest --passWithNoTests --verbose",
+    "test:watch": "jest --watch --passWithNoTests --verbose",
+    "test:coverage": "jest --coverage --passWithNoTests --verbose",
+    "lint": "eslint src/**/*.ts",
     "prepare": "husky install"
   },
   "devDependencies": {

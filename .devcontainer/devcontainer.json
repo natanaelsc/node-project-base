@@ -1,0 +1,50 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/javascript-node-postgres
+// Update the VARIANT arg in docker-compose.yml to pick a Node.js version
+{
+	"name": "Node Project Base",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/home/node/app",
+
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "zsh"
+	},
+
+	"extensions": [
+		"irongeek.vscode-env",
+		"wix.vscode-import-cost",
+		"ms-vscode.vscode-typescript-next",
+		"firsttris.vscode-jest-runner",
+		"cweijan.vscode-postgresql-client2",
+		"ms-ossdata.vscode-postgresql",
+		"prisma.prisma",
+		"mattpocock.ts-error-translator",
+		"rangav.vscode-thunder-client"
+	],
+
+	"features": {
+		"git": "latest",
+		"github-cli": "latest"
+	},
+
+	"forwardPorts": [3333, 5432],
+
+	"portsAttributes": {
+		"3333": {
+			"label": "Application",
+			"onAutoForward": "notify"
+		},
+		"5432": {
+			"label": "PostgreSQL",
+			"onAutoForward": "notify"
+		}
+	},
+
+	"postCreateCommand": "yarn install",
+	"postStartCommand": "lsb_release -a",
+
+	"shutdownAction": "stopCompose",
+
+	"remoteUser": "node"
+}

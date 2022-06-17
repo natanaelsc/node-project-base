@@ -1,7 +1,9 @@
 import { add } from '@math/add';
 import 'dotenv/config';
 
-console.log('Hello World!');
+const hello: string = 'Hello World!';
+
+console.log(hello);
 
 console.log(add(1, 999));
 

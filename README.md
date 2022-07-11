@@ -1,103 +1,135 @@
 # Scripts
 
 ## Initial
-```sh
+
+```bash
 yarn init -y
 ```
-```sh
+
+```bash
 touch .gitignore
 ```
-```sh
+
+```bash
 node -v > .nvmrc
 ```
 
 ## Typescript
-```sh
+
+```bash
 yarn add -D typescript ts-node @types/node
 ```
-```sh
+
+```bash
 yarn tsc --init
 ```
-```sh
+
+```bash
 yarn add -D ts-node-dev
 ```
 
 ## Eslint
-```sh
+
+```bash
 yarn add -D eslint
 ```
-```sh
+
+```bash
 yarn eslint --init ou yarn create @eslint/config
 ```
-```sh
+
+```bash
 touch .eslintignore
 ```
+
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.eslintrc.json)***
 
 ## Prettier
-```sh
+
+```bash
 yarn add --dev --exact prettier
 ```
-```sh
+
+```bash
 yarn add -D eslint-plugin-prettier eslint-config-prettier
 ```
-```sh
+
+```bash
 yarn add -D eslint-import-resolver-typescript tsconfig-paths
 ```
-```sh
+
+```bash
 echo {}> .prettierrc.json
 ```
-```sh
+
+```bash
 touch .prettierignore
 ```
+
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.prettierrc.json)***
 
 ## Nodemon
-```sh
+
+```bash
 yarn add -D nodemon
 ```
-```sh
+
+```bash
 echo {}> nodemon.json
 ```
+
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/nodemon.json)***
 
 ## [Dotenv](https://github.com/motdotla/dotenv)
-```sh
+
+```bash
 yarn add dotenv
 ```
-```sh
+
+```bash
 import 'dotenv/config'
 ```
+
 ***[File Exemple](https://github.com/natanaelsc96/node-project-base/blob/main/.env.exemple)***
 
 ## [Jest (TS Jest)](https://github.com/kulshekhar/ts-jest)
-```sh
+
+```bash
 yarn add -D jest ts-jest @types/jest
 ```
-```sh
+
+```bash
 npx ts-jest config:init
 ```
+
 > Rename jest.config.js to .ts
 
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/jest.config.ts)***
 
 ## [Commit Msg Linter](https://github.com/legend80s/commit-msg-linter)
-```sh
+
+```bash
 yarn add -D git-commit-msg-linter
 ```
-```sh
+
+```bash
 echo {}> commitlinterrc.json
 ```
-```sh
+
+```bash
 npx husky add .husky/commit-msg ".git/hooks/commit-msg \$1"
 ```
+
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/commitlinterrc.json)***
 
 ## [Lint Stage](https://github.com/okonet/lint-staged)
-```sh
+
+```bash
 npx mrm@2 lint-staged
 ```
-```sh
+
+```bash
 echo {}> .lintstagedrc.json
 ```
+
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.lintstagedrc.json)***

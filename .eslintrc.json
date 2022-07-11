@@ -8,6 +8,7 @@
         "standard",
         "eslint:recommended",
         "plugin:prettier/recommended",
+        "plugin:security/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:import/errors",
         "plugin:import/warnings",

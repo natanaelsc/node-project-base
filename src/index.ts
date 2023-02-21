@@ -1,7 +1,7 @@
 import { add } from '@math/add';
 import 'dotenv/config';
 
-const hello: string = 'Hello World!';
+const hello = 'Hello World!';
 
 console.log(hello);
 

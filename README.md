@@ -7,10 +7,25 @@ npm install
 npm run start:dev
 ```
 
+### Sonarqube
+
+```sh
+docker compose up -d
+```
+
+**User:** *admin* \
+**Pass:** *admin*
+
+<http://localhost:9000>
+
+```sh
+npm run sonar-scanner
+```
+
 ## Iniciando Novo Projeto
 
 ```sh
-yarn init -y
+npm init -y
 ```
 
 ```sh
@@ -19,30 +34,30 @@ touch .gitignore && node -v > .nvmrc
 
 ## Bibliotecas
 
-## Typescript
+## [Typescript](https://www.typescriptlang.org)
 
 ```sh
-yarn add -D typescript ts-node @types/node
+npm install -D typescript ts-node @types/node
 ```
 
 ```sh
-yarn tsc --init
+npx tsc --init
 ```
 
 ### [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
 
 ```sh
-yarn add -D ts-node-dev
+npm install -D ts-node-dev
 ```
 
 ### [Eslint](https://eslint.org)
 
 ```sh
-yarn add -D eslint
+npm install -D eslint @eslint/create-config
 ```
 
 ```sh
-yarn eslint --init ou yarn create @eslint/config
+npm create @eslint/config
 ```
 
 ```sh
@@ -54,19 +69,19 @@ touch .eslintignore
 ## [Prettier](https://prettier.io)
 
 ```sh
-yarn add --dev --exact prettier
+npm install --dev --exact prettier
 ```
 
 ```sh
-yarn add -D eslint-plugin-prettier eslint-config-prettier
+npm install -D eslint-plugin-prettier eslint-config-prettier
 ```
 
 ```sh
-yarn add -D eslint-import-resolver-typescript tsconfig-paths
+npm install -D eslint-import-resolver-typescript tsconfig-paths
 ```
 
 ```sh
-echo {}> .prettierrc.json
+echo {} > .prettierrc.json
 ```
 
 ```sh
@@ -78,19 +93,19 @@ touch .prettierignore
 ## [Nodemon](https://nodemon.io)
 
 ```sh
-yarn add -D nodemon
+npm install -D nodemon
 ```
 
 ```sh
-echo {}> nodemon.json
+echo {} > nodemon.json
 ```
 
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/nodemon.json)***
 
-## [Dotenv](https://github.com/motdotla/dotenv)
+## [dotenv](https://github.com/motdotla/dotenv)
 
 ```sh
-yarn add dotenv
+npm install dotenv
 ```
 
 ```sh
@@ -99,10 +114,10 @@ import 'dotenv/config'
 
 ***[File Exemple](https://github.com/natanaelsc96/node-project-base/blob/main/.env.exemple)***
 
-## [Jest (TS Jest)](https://github.com/kulshekhar/ts-jest)
+## [TS Jest](https://github.com/kulshekhar/ts-jest)
 
 ```sh
-yarn add -D jest ts-jest @types/jest
+npm install -D jest ts-jest @types/jest
 ```
 
 ```sh
@@ -113,14 +128,28 @@ npx ts-jest config:init
 
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/jest.config.ts)***
 
+## [Sonar Scanner](https://www.npmjs.com/package/sonar-scanner)
+
+```sh
+npm i sonar-scanner --save-dev
+```
+
+**Adicione script:**
+
+```json
+"scripts": {
+  "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner"
+}
+```
+
 ## [Commit Msg Linter](https://github.com/legend80s/commit-msg-linter)
 
 ```sh
-yarn add -D git-commit-msg-linter
+npm install -D git-commit-msg-linter
 ```
 
 ```sh
-echo {}> commitlinterrc.json
+echo {} > commitlinterrc.json
 ```
 
 ```sh
@@ -136,7 +165,7 @@ npx mrm@2 lint-staged
 ```
 
 ```sh
-echo {}> .lintstagedrc.json
+echo {} > .lintstagedrc.json
 ```
 
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.lintstagedrc.json)***

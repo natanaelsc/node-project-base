@@ -1,80 +1,87 @@
 # Scripts
 
-## Initial
+## Get Start
 
-```bash
+```sh
+npm install
+npm run start:dev
+```
+
+## Iniciando Novo Projeto
+
+```sh
 yarn init -y
 ```
 
-```bash
-touch .gitignore
+```sh
+touch .gitignore && node -v > .nvmrc
 ```
 
-```bash
-node -v > .nvmrc
-```
+## Bibliotecas
 
 ## Typescript
 
-```bash
+```sh
 yarn add -D typescript ts-node @types/node
 ```
 
-```bash
+```sh
 yarn tsc --init
 ```
 
-```bash
+### [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
+
+```sh
 yarn add -D ts-node-dev
 ```
 
-## Eslint
+### [Eslint](https://eslint.org)
 
-```bash
+```sh
 yarn add -D eslint
 ```
 
-```bash
+```sh
 yarn eslint --init ou yarn create @eslint/config
 ```
 
-```bash
+```sh
 touch .eslintignore
 ```
 
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.eslintrc.json)***
 
-## Prettier
+## [Prettier](https://prettier.io)
 
-```bash
+```sh
 yarn add --dev --exact prettier
 ```
 
-```bash
+```sh
 yarn add -D eslint-plugin-prettier eslint-config-prettier
 ```
 
-```bash
+```sh
 yarn add -D eslint-import-resolver-typescript tsconfig-paths
 ```
 
-```bash
+```sh
 echo {}> .prettierrc.json
 ```
 
-```bash
+```sh
 touch .prettierignore
 ```
 
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.prettierrc.json)***
 
-## Nodemon
+## [Nodemon](https://nodemon.io)
 
-```bash
+```sh
 yarn add -D nodemon
 ```
 
-```bash
+```sh
 echo {}> nodemon.json
 ```
 
@@ -82,11 +89,11 @@ echo {}> nodemon.json
 
 ## [Dotenv](https://github.com/motdotla/dotenv)
 
-```bash
+```sh
 yarn add dotenv
 ```
 
-```bash
+```sh
 import 'dotenv/config'
 ```
 
@@ -94,11 +101,11 @@ import 'dotenv/config'
 
 ## [Jest (TS Jest)](https://github.com/kulshekhar/ts-jest)
 
-```bash
+```sh
 yarn add -D jest ts-jest @types/jest
 ```
 
-```bash
+```sh
 npx ts-jest config:init
 ```
 
@@ -108,15 +115,15 @@ npx ts-jest config:init
 
 ## [Commit Msg Linter](https://github.com/legend80s/commit-msg-linter)
 
-```bash
+```sh
 yarn add -D git-commit-msg-linter
 ```
 
-```bash
+```sh
 echo {}> commitlinterrc.json
 ```
 
-```bash
+```sh
 npx husky add .husky/commit-msg ".git/hooks/commit-msg \$1"
 ```
 
@@ -124,11 +131,11 @@ npx husky add .husky/commit-msg ".git/hooks/commit-msg \$1"
 
 ## [Lint Stage](https://github.com/okonet/lint-staged)
 
-```bash
+```sh
 npx mrm@2 lint-staged
 ```
 
-```bash
+```sh
 echo {}> .lintstagedrc.json
 ```
 

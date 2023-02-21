@@ -13,7 +13,8 @@
     "test:watch": "jest --watch --passWithNoTests --verbose",
     "test:coverage": "jest --coverage --passWithNoTests --verbose",
     "lint": "eslint src/**/*.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner"
   },
   "devDependencies": {
     "@types/jest": "^28.1.1",
@@ -35,6 +36,7 @@
     "lint-staged": ">=10",
     "nodemon": "^2.0.16",
     "prettier": "2.6.2",
+    "sonar-scanner": "^3.1.0",
     "ts-jest": "^28.0.4",
     "ts-node": "^10.8.1",
     "ts-node-dev": "^2.0.0",

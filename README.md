@@ -1,4 +1,7 @@
-# Scripts
+# Node Project Base
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=natanaelsc_node-project-base&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=natanaelsc_node-project-base)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=natanaelsc_node-project-base&metric=coverage)](https://sonarcloud.io/summary/new_code?id=natanaelsc_node-project-base)
 
 ## Get Start
 

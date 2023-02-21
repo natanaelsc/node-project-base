@@ -1,6 +1,9 @@
-**/.git
-**/.svn
-**/.hg
-**/node_module
-**/src/database
-**/dist/
+.git
+.svn
+.hg
+node_modules/**
+dist/**
+coverage/**
+.env
+.scannerwork
+.vscode

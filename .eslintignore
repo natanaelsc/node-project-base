@@ -1,2 +1,7 @@
-node_modules
-dist
+.git
+node_modules/**
+dist/**
+coverage/**
+.env
+.scannerwork
+.vscode

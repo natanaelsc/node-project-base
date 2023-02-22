@@ -40,7 +40,7 @@ touch .gitignore && node -v > .nvmrc
 ## [Typescript](https://www.typescriptlang.org)
 
 ```sh
-npm install -D typescript ts-node @types/node
+npm install typescript ts-node @types/node --save-dev
 ```
 
 ```sh
@@ -51,6 +51,16 @@ npx tsc --init
 
 ```sh
 npm install -D ts-node-dev
+```
+
+### [Husky](https://typicode.github.io/husky)
+
+```sh
+npm install husky --save-dev
+```
+
+```sh
+npx husky install
 ```
 
 ### [Eslint](https://eslint.org)
@@ -72,15 +82,15 @@ touch .eslintignore
 ## [Prettier](https://prettier.io)
 
 ```sh
-npm install --dev --exact prettier
+npm install --save-dev --save-exact prettier
 ```
 
 ```sh
-npm install -D eslint-plugin-prettier eslint-config-prettier
+npm install --save-dev eslint-plugin-prettier eslint-config-prettier @typescript-eslint/parser
 ```
 
 ```sh
-npm install -D eslint-import-resolver-typescript tsconfig-paths
+npm install --save-dev eslint-import-resolver-typescript tsconfig-paths
 ```
 
 ```sh
@@ -91,7 +101,23 @@ echo {} > .prettierrc.json
 touch .prettierignore
 ```
 
+```sh
+npx husky add .husky/pre-commit  'npx lint-staged'
+```
+
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.prettierrc.json)***
+
+## [Lint Stage](https://github.com/okonet/lint-staged)
+
+```sh
+npm install --save-dev lint-staged
+```
+
+```sh
+echo {} > .lintstagedrc.json
+```
+
+***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.lintstagedrc.json)***
 
 ## [Nodemon](https://nodemon.io)
 
@@ -148,7 +174,7 @@ npm i sonar-scanner --save-dev
 ## [Commit Msg Linter](https://github.com/legend80s/commit-msg-linter)
 
 ```sh
-npm install -D git-commit-msg-linter
+npm install git-commit-msg-linter --save-dev
 ```
 
 ```sh
@@ -156,19 +182,21 @@ echo {} > commitlinterrc.json
 ```
 
 ```sh
-npx husky add .husky/commit-msg ".git/hooks/commit-msg \$1"
+npx husky add .husky/commit-msg '.git/hooks/commit-msg \$1'
 ```
 
 ***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/commitlinterrc.json)***
 
-## [Lint Stage](https://github.com/okonet/lint-staged)
+## [Commitilint](https://commitlint.js.org)
 
 ```sh
-npx mrm@2 lint-staged
+npm install --save-dev @commitlint/{cli,config-conventional,prompt-cli}
 ```
 
 ```sh
-echo {} > .lintstagedrc.json
+echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
 ```
 
-***[File Config](https://github.com/natanaelsc96/node-project-base/blob/main/.lintstagedrc.json)***
+```sh
+npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'
+```
